@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 Welcome to Cute College Admissions!</h1>
+        <p>Apply for your dream course now!</p>
+        <button id="applyBtn">Apply Now</button>
+    </header>
+    <main>
+        <section class="info">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>🌟 Best faculty</li>
+                <li>🏫 Modern campus</li>
+                <li>🤝 Friendly environment</li>
+                <li>🎉 Fun activities</li>
+            </ul>
+        </section>
+    </main>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Admission Form</h2>
+            <form>
+                <label>Name:<br>
+                    <input type="text" required>
+                </label><br>
+                <label>Email:<br>
+                    <input type="email" required>
+                </label><br>
+                <label>Course:<br>
+                    <select required>
+                        <option value="">Choose a course</option>
+                        <option>BSc</option>
+                        <option>BA</option>
+                        <option>BCom</option>
+                    </select>
+                </label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
