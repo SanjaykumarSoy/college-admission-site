@@ -15,7 +15,7 @@ function toggleCourses() {
   const list = document.getElementById('courseList');
   list.classList.toggle('visible');
 }
-
+ 
 // Brutally honest Saveetha quotes
 const quotes = [
   "Saveetha: where attendance is sacred, but common sense is optional!",
