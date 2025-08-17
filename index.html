@@ -1,81 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saveetha School of Engineering Admission Portal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo-title">
-            <img src="logo.png" alt="Saveetha Institute Logo" class="logo">
-            <div>
-                <h1>Saveetha School of Engineering</h1>
-                <h2>Admission Portal 2025</h2>
-            </div>
-        </div>
-        <button id="applyBtn">Apply Now</button>
-    </header>
-    <main>
-        <section class="intro">
-            <h3>Welcome to Saveetha Admissions</h3>
-            <p>
-                Pursue excellence in engineering. Join a legacy of innovation, research, and leadership.
-            </p>
-        </section>
-        <section class="features">
-            <h3>Why Saveetha?</h3>
-            <div class="feature-list">
-                <div>
-                    <span class="icon">🌌</span>
-                    <p>Modern Campus</p>
-                </div>
-                <div> 
-                    <span class="icon">🛰️</span>
-                    <p>Advanced Research Labs</p>
-                </div>
-                <div>
-                    <span class="icon">⏳</span>
-                    <p>Legacy Since 2005</p>
-                </div>
-                <div>
-                    <span class="icon">🎓</span>
-                    <p>Expert Faculty</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close">&times;</span>
-            <h2>Admission Application</h2>
-            <form>
-                <label>
-                    Full Name:<br>
-                    <input type="text" required>
-                </label><br>
-                <label>
-                    Email:<br>
-                    <input type="email" required>
-                </label><br>
-                <label>
-                    Course:<br>
-                    <select required>
-                        <option value="">Select your course</option>
-                        <option>B.Tech</option>
-                        <option>B.E.</option>
-                        <option>M.Tech</option>
-                        <option>Ph.D.</option>
-                    </select>
-                </label><br>
-                <button type="submit">Submit Application</button>
-            </form>
-        </div>
-    </div>
-    <footer>
-        &copy; 2025 Saveetha School of Engineering. All rights reserved.
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+// Animate sections on scroll
+function revealSections() {
+  document.querySelectorAll('section').forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      section.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealSections);
+window.addEventListener('DOMContentLoaded', revealSections);
+
+// Show/hide courses with animation
+function toggleCourses() {
+  const list = document.getElementById('courseList');
+  list.classList.toggle('visible');
+}
+
+// Brutally honest Saveetha quotes
+const quotes = [
+  "Saveetha: where attendance is sacred, but common sense is optional!",
+  "Come for the degree, stay for the drama — Saveetha style!",
+  "If procrastination was a sport, Saveetha students would be world champs.",
+  "Saveetha canteen food: guaranteed to test your stomach’s loyalty."
+];
+function showQuote() {
+  const quoteDiv = document.getElementById('quote');
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  quoteDiv.textContent = quotes[randomIndex];
+  quoteDiv.classList.remove('visible');
+  setTimeout(() => quoteDiv.classList.add('visible'), 50);
+}
