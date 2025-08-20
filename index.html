@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saveetha School of Engineering</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your College Name</title>
+  <link rel="icon" type="image/jpg" href="symplogo.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Galaxy Background -->
   <div class="stars"></div>
   <div class="stars2"></div>
   <div class="stars3"></div>
-  <svg class="nebula nebula1" viewBox="0 0 300 300" aria-hidden="true" focusable="false" >
+  <!-- Decorative SVGs -->
+  <svg class="nebula nebula1" viewBox="0 0 300 300" aria-hidden="true">
     <defs>
       <radialGradient id="nebulaGrad1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stop-color="#a9d6ff" stop-opacity="0.8"/>
@@ -20,7 +23,7 @@
     </defs>
     <ellipse cx="150" cy="150" rx="120" ry="70" fill="url(#nebulaGrad1)" />
   </svg>
-  <svg class="nebula nebula2" viewBox="0 0 200 200" aria-hidden="true" focusable="false" >
+  <svg class="nebula nebula2" viewBox="0 0 200 200" aria-hidden="true">
     <defs>
       <radialGradient id="nebulaGrad2" cx="40%" cy="60%" r="60%">
         <stop offset="0%" stop-color="#ffec8b" stop-opacity="0.7"/>
@@ -29,40 +32,38 @@
     </defs>
     <ellipse cx="100" cy="100" rx="90" ry="40" fill="url(#nebulaGrad2)" />
   </svg>
-  <svg class="planet" viewBox="0 0 100 100" aria-hidden="true" focusable="false" >
+  <svg class="planet" viewBox="0 0 100 100" aria-hidden="true">
     <circle cx="50" cy="50" r="40" fill="#3a0ca3" />
     <ellipse cx="50" cy="60" rx="28" ry="10" fill="#a9d6ff" opacity="0.5"/>
     <ellipse cx="50" cy="40" rx="18" ry="6" fill="#ffec8b" opacity="0.4"/>
   </svg>
+  <!-- Header with logo -->
   <header>
     <div class="container">
-      <div class="logo-container glass">
-        <img src="logo.png" alt="Saveetha School of Engineering Logo" />
+      <div class="logo-container">
+        <img src="symplogo.jpg" alt="College Logo" />
       </div>
-      <h1 class="glow">Saveetha School of Engineering</h1>
+      <h1>Your College Name</h1>
       <nav>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
+        <a href="#admissions">Admissions</a>
         <a href="#events">Events</a>
-        <a href="https://youtu.be/dQw4w9WgXcQ?si=Td-7oe4Fhhkv1ab5" target="_blank" rel="noopener noreferrer" class="fun-btn nav-btn">Admissions</a>
       </nav>
     </div>
   </header>
-  <main class="container glass">
-    <div class="intro-dark">
-      Where dreams come in full color and leave in black and white. From the outside, it’s a palace; inside, it’s as broken as your semester’s wallet. Here, you either lose your mind, your sleep, or your hope—sometimes all three. It’s beautiful, it’s brutal, and by the end, you’ll be a survivor with a degree and a thousand stories your parents will never hear.
-    </div>
+  <main class="container">
     <section id="about">
-      <h2 class="section-title">About Us</h2>
+      <h2>About Us</h2>
       <p>
-        Welcome to <b>Saveetha School of Engineering</b>!  
-        We are a vibrant community of innovators, thinkers, and creators.  
-        Our campus is a place where learning is fun, creativity is encouraged, and every day is an adventure!
+        Welcome to <b>Your College Name</b>!  
+        A vibrant community of innovators, thinkers, and creators.  
+        Where learning is fun, creativity is encouraged, and every day is an adventure!
       </p>
     </section>
     <section id="courses">
-      <h2 class="section-title">Courses Offered</h2>
-      <button class="fun-btn glow" onclick="toggleCourses()">🎉 Show/Hide Courses</button>
+      <h2>Courses Offered</h2>
+      <button class="fun-btn" onclick="toggleCourses()">Show/Hide Courses</button>
       <ul class="course-list" id="courseList">
         <li>B.E. Computer Science & Engineering</li>
         <li>B.E. Electronics & Communication Engineering</li>
@@ -73,26 +74,21 @@
         <li>B.E. Electrical & Electronics Engineering</li>
       </ul>
     </section>
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <a href="https://youtu.be/dQw4w9WgXcQ?si=Td-7oe4Fhhkv1ab5" target="_blank" class="fun-btn">Apply Now</a>
+    </section>
     <section id="events">
-      <h2 class="section-title">Upcoming Events</h2>
+      <h2>Upcoming Events</h2>
       <ul>
         <li>Tech Carnival 2025 – July 20, 2025</li>
         <li>Robotics Hackathon – August 10, 2025</li>
         <li>Fun Sports Day – September 14, 2025</li>
       </ul>
     </section>
-    <button class="fun-btn glow" onclick="showQuote()">💡 Saveetha Motivation!</button>
-    <div id="quote"></div>
   </main>
   <footer>
-    <div class="footer-content">
-      &copy; 2025 Saveetha School of Engineering. All rights reserved.
-      <span class="footer-icons">
-        <a href="mailto:admissions@saveetha.edu.in" title="Email"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" class="icon" /></a>
-        <a href="https://www.linkedin.com/school/saveetha-institute-of-medical-and-technical-sciences/" target="_blank" title="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="icon" /></a>
-        <a href="https://www.saveetha.com/" target="_blank" title="Website"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/internetexplorer.svg" alt="Website" class="icon" /></a>
-      </span>
-    </div>
+    &copy; 2025 Your College Name. All rights reserved.
   </footer>
   <script src="script.js"></script>
 </body>
